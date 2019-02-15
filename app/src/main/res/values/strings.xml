@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">RGTest</string>
+    <string name="title_activity_gift_detail">GiftDetail</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+    <string name="info_produk">Info Produk</string>
+    <string name="addtocart">Add to cart</string>
+    <string name="redeem">Redeem</string>
+    <string name="addtowishlist">Add to Wishlist</string>
+
+</resources>

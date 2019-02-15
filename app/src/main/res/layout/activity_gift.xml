@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context=".activity.GiftActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/giftImageDetail"
+        android:layout_width="245dp"
+        android:layout_height="325dp"
+        android:layout_marginTop="26dp"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/giftStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_new"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/giftNameDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/giftImageDetail"/>
+
+    <TextView
+        android:id="@+id/giftSubName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="12dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        android:layout_below="@+id/giftNameDetail"/>
+
+    <View
+        android:id="@+id/div1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="10dp"
+        android:background="#EBEEF7"
+        android:layout_below="@+id/giftSubName"/>
+
+    <LinearLayout
+        android:id="@+id/linearData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/div1"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <RatingBar
+                android:id="@+id/giftRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/linearPoint"
+                style="@style/Base.Widget.AppCompat.RatingBar.Small"/>
+
+            <TextView
+                android:id="@+id/giftReviewDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="12dp"
+                android:layout_below="@+id/giftRating"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:background="#EBEEF7"
+            />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/giftPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_point_1" />
+
+            <TextView
+                android:id="@+id/jmlPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/giftPoint"
+                android:layout_centerHorizontal="true"
+                android:textSize="20dp"
+                android:textColor="#74B71B"/>
+
+            <TextView
+                android:id="@+id/textPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/jmlPoint"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:background="#EBEEF7"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            >
+
+
+            <ImageView
+                android:id="@+id/giftImageLove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_love_1_2x"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="@string/addtowishlist"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/giftImageLove"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/div2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="10dp"
+        android:background="#EBEEF7"
+        android:layout_below="@+id/linearData"/>
+
+    <TextView
+        android:id="@+id/giftInfoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="14dp"
+        android:text="Info Produk"
+        android:textStyle="bold"
+        android:layout_below="@+id/div2"/>
+
+    <TextView
+        android:id="@+id/giftDescriptionDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/giftInfoText"
+        android:textSize="12dp"
+        android:layout_margin="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/linearJmlAndAddChart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/giftDescriptionDetail">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/roundedstock">
+
+            <Button
+                android:id="@+id/btnMinus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/minus"
+                android:background="@drawable/roundedminus"/>
+
+            <TextView
+                android:id="@+id/valueStock"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:textSize="18sp"
+                />
+
+            <Button
+                android:id="@+id/btnPlus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/plus"
+                android:background="@drawable/roundedplus"/>
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#74B71B"
+            android:text="@string/addtocart"
+            android:textAllCaps="false"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/roundedbuttonoutline"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnRedeem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/roundedbutton"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:layout_margin="10dp"
+        android:text="@string/redeem"
+        android:layout_below="@+id/linearJmlAndAddChart"/>
+
+    </RelativeLayout>
+</ScrollView>
